@@ -20,7 +20,7 @@ $(function() {
   
   function set_settings() {
     window.settings = [];
-    settings.numberofavatars = 82;
+    settings.numberofavatars = 32;
     settings.tasklength = 180000;
     window.others.posts[1].likes = [12000,14000,15000,35000,80000];
     window.others.posts[1].Dislikes = [12000,14000,15000,35000,80000];
