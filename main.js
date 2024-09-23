@@ -16,7 +16,7 @@ $(function() {
      // Condition 4 settings
     4: { likes: [], dislikes: [10000,35000,80000,100000,132000,150000] }  
   };
-  var assignedConditionNumber = getRandomInt(1, 4);
+  var assignedConditionNumber = 4; // Set to always use condition 4
   
   function set_settings() {
     window.settings = [];
