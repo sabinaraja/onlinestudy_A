@@ -4,11 +4,13 @@ $(function() {
   var globalUsername = "";
   var globalAvatar = "";
   var globalDescription = "";
-  var countlike = 0;
-  var countDislike = 0;
+  var countlike = 6;
+  var countDislike = 6;
   var conditions = {
+ // Condition 1 settings
+ 1: { likes: [6741,25142,39367,74539,77392,147404], dislikes: [] },
 };
- var assignedConditionNumber = getRandomInt(1,0);
+ var assignedConditionNumber = getRandomInt(1,1);
  function set_settings() {
   window.settings = [];
   settings.numberofavatars = 24; 
