@@ -16,7 +16,7 @@ $(function() {
      // Condition 4 settings
     4: { likes: [], dislikes: [10000,35000,80000,100000,132000,150000] }  
   };
-var assignedConditionNumber = getRandomInt(1, 4);
+  var assignedConditionNumber = getRandomInt(1, 4);
   
   function set_settings() {
     window.settings = [];
@@ -33,7 +33,11 @@ var assignedConditionNumber = getRandomInt(1, 4);
   // Above were the basic parameters you can adjust using the instructions.
   // The remaining code is also annotated, but we do not recommend changing it, unless you are comfortable with web programming.
   // -------------------
-	
+
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
   // Generate a random integer between 1 and 4 (inclusive)
   const randomNumber = getRandomInt(1, 4);
   console.log(randomNumber);
