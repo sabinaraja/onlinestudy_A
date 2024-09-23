@@ -1,34 +1,24 @@
 $(function() {
   //GLOBAL VARIABLES
-  var totalLink = 'https://osu.az1.qualtrics.com/jfe/form/SV_eWY4YOSQN3iwdFQ?';
+  var totalLink = 'https://ssd.az1.qualtrics.com/jfe/form/SV_3aAIyrsInJs69iS';
   var globalUsername = "";
   var globalAvatar = "";
   var globalDescription = "";
   var countlike = 0;
   var countDislike = 0;
   var conditions = {
-    // Condition 1 settings
-    1: { likes: [10000,20000,35000,45000,60000,78000,80000,100000,132000], dislikes: [] }, 
-     // Condition 2 settings
-    2: { likes: [10000,35000,80000,100000,132000,150000], dislikes: [] },
-     // Condition 3 settings
-    3: { likes: [10000], dislikes: [11111] }, 
-     // Condition 4 settings
-    4: { likes: [], dislikes: [10000,35000,80000,100000,132000,150000] }  
-  };
-  var assignedConditionNumber = getRandomInt(1, 4);
-  
-  function set_settings() {
-    window.settings = [];
-    settings.numberofavatars = 82;
-    settings.tasklength = 180000;
-    window.others.posts[1].likes = [12000,14000,15000,35000,80000];
-    window.others.posts[1].Dislikes = [12000,14000,15000,35000,80000];
-    settings.likes_by = ['Ky', 'Arjen', 'AncaD', 'Nick', 'Heather', 'Jane', 'Georgeee', 'John',  'Mary', 'Lauren', 'Sarah'];
-    settings.Dislikes_by = [ 'Lauren', 'Arjen', 'Jane',  'Ky', 'AncaD', 'Nick', 'Heather', 'Georgeee', 'John', 'Mary', 'Sarah'];
-    window.query_string =null;
-  }
-  
+};
+ var assignedConditionNumber = getRandomInt(1,0);
+ function set_settings() {
+  window.settings = [];
+  settings.numberofavatars = 24; 
+  settings.tasklength = 180000;
+  window.others.posts[1].likes = [12000,14000,15000,35000,80000];
+  window.others.posts[1].Dislikes = [12000,14000,15000,35000,80000];
+  settings.likes_by = ['Ky', 'Arjen', 'AncaD', 'Nick', 'Heather', 'Jane', 'Georgeee', 'John',  'Mary', 'Lauren', 'Sarah'];
+  settings.Dislikes_by = ['Lauren', 'Arjen', 'Jane',  'Ky', 'AncaD', 'Nick', 'Heather', 'Georgeee', 'John', 'Mary', 'Sarah'];
+  window.query_string = null;
+}
   // -------------------
   // Above were the basic parameters you can adjust using the instructions.
   // The remaining code is also annotated, but we do not recommend changing it, unless you are comfortable with web programming.
