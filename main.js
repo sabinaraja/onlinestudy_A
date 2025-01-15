@@ -1,6 +1,6 @@
 $(function() {
   //GLOBAL VARIABLES
-  var totalLink = 'https%3A%2F%2Fssd.az1.qualtrics.com%2Fjfe%2Fform%2FSV_cHeb5IEexOZ8qqy';
+  var totalLink = 'https://ssd.az1.qualtrics.com/jfe/form/SV_cHeb5IEexOZ8qqy';
   var globalUsername = "";
   var globalAvatar = "";
   var globalDescription = "";
